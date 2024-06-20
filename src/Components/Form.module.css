@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: url(../assets/images/bg-desktop-dark.jpg), hsl(235, 21%, 11%) ;
+    background-size: 100% 300px, 100% calc(100% - 300px);
+    background-position: top, bottom;
+    background-repeat: no-repeat, no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: auto;
+    background: transparent;
+    padding: 1.2em;
+    margin-top: 6em;
+}
+
+.container h2 {
+    font-size: 1.4em;
+    text-transform: uppercase;
+    color: hsl(0,0%,100%);
+    letter-spacing: .3em;
+    padding-bottom: 1.2em;
+}
+
+.container .todo {
+    width: 380px;
+    height: 500px;
+}
+
+.todo .create {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 1em;
+    background: hsl(235, 24%, 19%);
+    padding: .7em 1em;
+    font-size: 1em;
+    color: hsl(234, 11%, 52%);
+    border-radius: .4em;
+}
+
+/* .create input {
+    accent-color: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+} */
+
+.create label {
+    margin-bottom: -.1em;
+}
+
+.todo .tasklist {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background: hsl(235, 24%, 19%);
+    padding: .7em 1em;
+    font-size: 1em;
+    color: hsl(234, 11%, 52%);
+    border-radius: .4em;
+}
+
+.tasklist .listtask {
+    margin-bottom: 1.1em;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+
+/* .tasklist .line {
+    border-bottom: 1px solid red;
+    width: 100%;
+    padding: 0;
+} */
+
